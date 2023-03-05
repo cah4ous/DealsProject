@@ -215,7 +215,7 @@ extension DealsViewController: UITableViewDataSource, UITableViewDelegate {
 /// Расширение для получения сделок
 extension DealsViewController: DealViewProtocol {
     func success(deals: [Deal]) {
-        self.deals = deals
+        self.deals += deals
     }
 
     func failure(error: Error) {
