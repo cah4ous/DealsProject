@@ -25,6 +25,10 @@
 		71A1B32929B4D4B0000B5AE4 /* DealCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A1B32829B4D4B0000B5AE4 /* DealCellProtocol.swift */; };
 		71A1B32C29B4D5E0000B5AE4 /* ServerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A1B32B29B4D5E0000B5AE4 /* ServerProtocol.swift */; };
 		71A1B32E29B4D60E000B5AE4 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A1B32D29B4D60E000B5AE4 /* NetworkServiceProtocol.swift */; };
+		71BD28C329B511DD006DD5D7 /* DealPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD28C229B511DD006DD5D7 /* DealPresenter.swift */; };
+		71BD28C629B5122B006DD5D7 /* DealPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD28C529B5122B006DD5D7 /* DealPresenterProtocol.swift */; };
+		71BD28C929B5201F006DD5D7 /* DealViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD28C829B5201F006DD5D7 /* DealViewProtocol.swift */; };
+		71BD28CB29B520CC006DD5D7 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD28CA29B520CB006DD5D7 /* UIViewController+Extension.swift */; };
 		71DE205D29B49A0E00DD9973 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DE205C29B49A0D00DD9973 /* Typealias.swift */; };
 		71DE206329B4A32300DD9973 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71DE206229B4A32200DD9973 /* HeaderCell.xib */; };
 		71DE206529B4A3D400DD9973 /* ButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DE206429B4A3D400DD9973 /* ButtonState.swift */; };
@@ -51,6 +55,10 @@
 		71A1B32829B4D4B0000B5AE4 /* DealCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealCellProtocol.swift; sourceTree = "<group>"; };
 		71A1B32B29B4D5E0000B5AE4 /* ServerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerProtocol.swift; sourceTree = "<group>"; };
 		71A1B32D29B4D60E000B5AE4 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		71BD28C229B511DD006DD5D7 /* DealPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealPresenter.swift; sourceTree = "<group>"; };
+		71BD28C529B5122B006DD5D7 /* DealPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealPresenterProtocol.swift; sourceTree = "<group>"; };
+		71BD28C829B5201F006DD5D7 /* DealViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealViewProtocol.swift; sourceTree = "<group>"; };
+		71BD28CA29B520CB006DD5D7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		71DE205C29B49A0D00DD9973 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		71DE206229B4A32200DD9973 /* HeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		71DE206429B4A3D400DD9973 /* ButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonState.swift; sourceTree = "<group>"; };
@@ -89,8 +97,7 @@
 				151E70562940D970000F9ED0 /* AppDelegate.swift */,
 				151E70582940D970000F9ED0 /* SceneDelegate.swift */,
 				71A1B32529B4D460000B5AE4 /* Builder */,
-				71471D3929B370C3004AE0F7 /* Models */,
-				71B97EE529B3675F005FCEAF /* Views */,
+				71BD28C029B511A4006DD5D7 /* DealScreen */,
 				71A1B31E29B4B78E000B5AE4 /* Extensions */,
 				71DE206129B49AA400DD9973 /* Enums */,
 				71DE205E29B49A9700DD9973 /* Typealias */,
@@ -144,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				71A1B31C29B4B77A000B5AE4 /* String+Extension.swift */,
+				71BD28CA29B520CB006DD5D7 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -166,14 +174,42 @@
 			path = Server;
 			sourceTree = "<group>";
 		};
-		71B97EE529B3675F005FCEAF /* Views */ = {
+		71BD28C029B511A4006DD5D7 /* DealScreen */ = {
 			isa = PBXGroup;
 			children = (
-				151E705A2940D970000F9ED0 /* DealsViewController.swift */,
-				71471D3A29B372CF004AE0F7 /* DealCell */,
-				71471D3B29B372DA004AE0F7 /* HeaderCell */,
+				71BD28C729B51E0A006DD5D7 /* View */,
+				71471D3929B370C3004AE0F7 /* Models */,
+				71BD28C429B511E4006DD5D7 /* Presenter */,
 			);
-			path = Views;
+			path = DealScreen;
+			sourceTree = "<group>";
+		};
+		71BD28C129B511C0006DD5D7 /* DealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				71BD28C829B5201F006DD5D7 /* DealViewProtocol.swift */,
+				151E705A2940D970000F9ED0 /* DealsViewController.swift */,
+			);
+			path = DealViewController;
+			sourceTree = "<group>";
+		};
+		71BD28C429B511E4006DD5D7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				71BD28C529B5122B006DD5D7 /* DealPresenterProtocol.swift */,
+				71BD28C229B511DD006DD5D7 /* DealPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		71BD28C729B51E0A006DD5D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71BD28C129B511C0006DD5D7 /* DealViewController */,
+				71471D3B29B372DA004AE0F7 /* HeaderCell */,
+				71471D3A29B372CF004AE0F7 /* DealCell */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		71DE205E29B49A9700DD9973 /* Typealias */ = {
@@ -311,14 +347,18 @@
 				71DE206529B4A3D400DD9973 /* ButtonState.swift in Sources */,
 				71A1B32429B4D3C9000B5AE4 /* AssemblyBuilder.swift in Sources */,
 				71A1B32E29B4D60E000B5AE4 /* NetworkServiceProtocol.swift in Sources */,
+				71BD28C929B5201F006DD5D7 /* DealViewProtocol.swift in Sources */,
 				71A1B32729B4D475000B5AE4 /* AssemblyBuilderProtocol.swift in Sources */,
 				71A1B32929B4D4B0000B5AE4 /* DealCellProtocol.swift in Sources */,
+				71BD28CB29B520CC006DD5D7 /* UIViewController+Extension.swift in Sources */,
 				151E705B2940D970000F9ED0 /* DealsViewController.swift in Sources */,
 				155E2E092942CF470094E5DA /* HeaderCell.swift in Sources */,
 				71A1B32C29B4D5E0000B5AE4 /* ServerProtocol.swift in Sources */,
+				71BD28C629B5122B006DD5D7 /* DealPresenterProtocol.swift in Sources */,
 				151E70572940D970000F9ED0 /* AppDelegate.swift in Sources */,
 				151E706B2940D98C000F9ED0 /* Server.swift in Sources */,
 				151E70592940D970000F9ED0 /* SceneDelegate.swift in Sources */,
+				71BD28C329B511DD006DD5D7 /* DealPresenter.swift in Sources */,
 				71DE205D29B49A0E00DD9973 /* Typealias.swift in Sources */,
 				71A1B31D29B4B77A000B5AE4 /* String+Extension.swift in Sources */,
 				71471D3629B36FFF004AE0F7 /* Deal.swift in Sources */,

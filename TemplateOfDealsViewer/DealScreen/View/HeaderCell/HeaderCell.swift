@@ -4,7 +4,7 @@
 import UIKit
 
 /// Ячейка хедера сделок
-class HeaderCell: UITableViewHeaderFooterView {
+final class HeaderCell: UITableViewHeaderFooterView {
     // MARK: - Private Enum
 
     private enum Constants {

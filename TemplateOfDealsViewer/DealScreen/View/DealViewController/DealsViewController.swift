@@ -26,13 +26,17 @@ final class DealsViewController: UIViewController {
 
     // MARK: - Private Properties
 
-    private let networkService: NetworkServiceProtocol
-    private var deals: [Deal] = []
+    private var presenter: DealPresenterProtocol?
+    private var deals: [Deal] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     // MARK: - Initializers
 
-    init(networkService: NetworkServiceProtocol) {
-        self.networkService = networkService
+    init(presenter: DealPresenterProtocol) {
+        self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -52,7 +56,7 @@ final class DealsViewController: UIViewController {
 
     private func initMethods() {
         setupUI()
-        loadDeals()
+        setupPresenter()
     }
 
     private func setupUI() {
@@ -101,17 +105,8 @@ final class DealsViewController: UIViewController {
         navigationItem.title = Constants.navigationTitleText
     }
 
-    private func loadDeals() {
-        networkService.fetchDeals { [weak self] result in
-            guard let self = self else { return }
-            switch result {
-            case let .success(deals):
-                self.deals.append(contentsOf: deals)
-                self.tableView.reloadData()
-            case let .failure(error):
-                print(error.localizedDescription)
-            }
-        }
+    private func setupPresenter() {
+        presenter?.fetchDeals()
     }
 
     private func setDefaultSettings(result: ButtonState, typeOperation: OperationType) {
@@ -214,5 +209,16 @@ extension DealsViewController: UITableViewDataSource, UITableViewDelegate {
         else { return UITableViewCell() }
         headerTest(headerCell: headerCell)
         return headerCell
+    }
+}
+
+/// Расширение для получения сделок
+extension DealsViewController: DealViewProtocol {
+    func success(deals: [Deal]) {
+        self.deals = deals
+    }
+
+    func failure(error: Error) {
+        showErrorAlert(alertTitle: error.localizedDescription, message: nil, actionTitle: nil)
     }
 }

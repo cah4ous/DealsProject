@@ -8,7 +8,9 @@ final class AssemblyBuilder: AssemblyBuilderProtocol {
     func makeDealModule() -> UIViewController {
         let server = Server()
         let networkService = NetworkService(server: server)
-        let view = DealsViewController(networkService: networkService)
+        let presenter = DealPresenter(networkService: networkService)
+        let view = DealsViewController(presenter: presenter)
+        presenter.view = view
         return view
     }
 }
