@@ -34,12 +34,7 @@ final class DealCell: UITableViewCell, DealCellProtocol {
     // MARK: - Private Methods
 
     private func changeSideLabel(side: Side) {
-        switch side {
-        case .sell:
-            sideLabel.textColor = .systemRed
-        case .buy:
-            sideLabel.textColor = .systemGreen
-        }
+        sideLabel.textColor = side == .sell ? .systemRed : .systemGreen
         sideLabel.text = "\(side)"
     }
 }
