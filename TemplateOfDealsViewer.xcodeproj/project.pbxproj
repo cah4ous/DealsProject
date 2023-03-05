@@ -15,9 +15,19 @@
 		151E70632940D971000F9ED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151E70612940D971000F9ED0 /* LaunchScreen.storyboard */; };
 		151E706B2940D98C000F9ED0 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E706A2940D98C000F9ED0 /* Server.swift */; };
 		151E706F2941FC75000F9ED0 /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E706E2941FC75000F9ED0 /* DealCell.swift */; };
-		155E2E082942CF470094E5DA /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 155E2E062942CF470094E5DA /* HeaderCell.xib */; };
 		155E2E092942CF470094E5DA /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155E2E072942CF470094E5DA /* HeaderCell.swift */; };
 		711F63EE29B3687E003949B4 /* DealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711F63ED29B3687E003949B4 /* DealCell.xib */; };
+		71471D3629B36FFF004AE0F7 /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71471D3529B36FFF004AE0F7 /* Deal.swift */; };
+		71A1B31D29B4B77A000B5AE4 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A1B31C29B4B77A000B5AE4 /* String+Extension.swift */; };
+		71A1B32229B4C422000B5AE4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A1B32129B4C422000B5AE4 /* NetworkService.swift */; };
+		71A1B32429B4D3C9000B5AE4 /* AssemblyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A1B32329B4D3C9000B5AE4 /* AssemblyBuilder.swift */; };
+		71A1B32729B4D475000B5AE4 /* AssemblyBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A1B32629B4D475000B5AE4 /* AssemblyBuilderProtocol.swift */; };
+		71A1B32929B4D4B0000B5AE4 /* DealCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A1B32829B4D4B0000B5AE4 /* DealCellProtocol.swift */; };
+		71A1B32C29B4D5E0000B5AE4 /* ServerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A1B32B29B4D5E0000B5AE4 /* ServerProtocol.swift */; };
+		71A1B32E29B4D60E000B5AE4 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A1B32D29B4D60E000B5AE4 /* NetworkServiceProtocol.swift */; };
+		71DE205D29B49A0E00DD9973 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DE205C29B49A0D00DD9973 /* Typealias.swift */; };
+		71DE206329B4A32300DD9973 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71DE206229B4A32200DD9973 /* HeaderCell.xib */; };
+		71DE206529B4A3D400DD9973 /* ButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DE206429B4A3D400DD9973 /* ButtonState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +41,19 @@
 		151E70642940D971000F9ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		151E706A2940D98C000F9ED0 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		151E706E2941FC75000F9ED0 /* DealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
-		155E2E062942CF470094E5DA /* HeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		155E2E072942CF470094E5DA /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
-		711F63ED29B3687E003949B4 /* DealCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DealCell.xib; path = Views/DealCell.xib; sourceTree = "<group>"; };
+		711F63ED29B3687E003949B4 /* DealCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealCell.xib; sourceTree = "<group>"; };
+		71471D3529B36FFF004AE0F7 /* Deal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
+		71A1B31C29B4B77A000B5AE4 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		71A1B32129B4C422000B5AE4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		71A1B32329B4D3C9000B5AE4 /* AssemblyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilder.swift; sourceTree = "<group>"; };
+		71A1B32629B4D475000B5AE4 /* AssemblyBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilderProtocol.swift; sourceTree = "<group>"; };
+		71A1B32829B4D4B0000B5AE4 /* DealCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealCellProtocol.swift; sourceTree = "<group>"; };
+		71A1B32B29B4D5E0000B5AE4 /* ServerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerProtocol.swift; sourceTree = "<group>"; };
+		71A1B32D29B4D60E000B5AE4 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		71DE205C29B49A0D00DD9973 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		71DE206229B4A32200DD9973 /* HeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		71DE206429B4A3D400DD9973 /* ButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,26 +88,108 @@
 			children = (
 				151E70562940D970000F9ED0 /* AppDelegate.swift */,
 				151E70582940D970000F9ED0 /* SceneDelegate.swift */,
+				71A1B32529B4D460000B5AE4 /* Builder */,
+				71471D3929B370C3004AE0F7 /* Models */,
 				71B97EE529B3675F005FCEAF /* Views */,
+				71A1B31E29B4B78E000B5AE4 /* Extensions */,
+				71DE206129B49AA400DD9973 /* Enums */,
+				71DE205E29B49A9700DD9973 /* Typealias */,
+				71471D3C29B37374004AE0F7 /* ServiceLayer */,
+				71A1B32A29B4D5DA000B5AE4 /* Server */,
 				151E705C2940D970000F9ED0 /* Main.storyboard */,
 				151E705F2940D971000F9ED0 /* Assets.xcassets */,
 				151E70612940D971000F9ED0 /* LaunchScreen.storyboard */,
 				151E70642940D971000F9ED0 /* Info.plist */,
-				151E706A2940D98C000F9ED0 /* Server.swift */,
-				151E705A2940D970000F9ED0 /* DealsViewController.swift */,
-				151E706E2941FC75000F9ED0 /* DealCell.swift */,
-				711F63ED29B3687E003949B4 /* DealCell.xib */,
-				155E2E072942CF470094E5DA /* HeaderCell.swift */,
-				155E2E062942CF470094E5DA /* HeaderCell.xib */,
 			);
 			path = TemplateOfDealsViewer;
+			sourceTree = "<group>";
+		};
+		71471D3929B370C3004AE0F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71471D3529B36FFF004AE0F7 /* Deal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71471D3A29B372CF004AE0F7 /* DealCell */ = {
+			isa = PBXGroup;
+			children = (
+				71A1B32829B4D4B0000B5AE4 /* DealCellProtocol.swift */,
+				151E706E2941FC75000F9ED0 /* DealCell.swift */,
+				711F63ED29B3687E003949B4 /* DealCell.xib */,
+			);
+			path = DealCell;
+			sourceTree = "<group>";
+		};
+		71471D3B29B372DA004AE0F7 /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				155E2E072942CF470094E5DA /* HeaderCell.swift */,
+				71DE206229B4A32200DD9973 /* HeaderCell.xib */,
+			);
+			path = HeaderCell;
+			sourceTree = "<group>";
+		};
+		71471D3C29B37374004AE0F7 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				71A1B32D29B4D60E000B5AE4 /* NetworkServiceProtocol.swift */,
+				71A1B32129B4C422000B5AE4 /* NetworkService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		71A1B31E29B4B78E000B5AE4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				71A1B31C29B4B77A000B5AE4 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		71A1B32529B4D460000B5AE4 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				71A1B32629B4D475000B5AE4 /* AssemblyBuilderProtocol.swift */,
+				71A1B32329B4D3C9000B5AE4 /* AssemblyBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		71A1B32A29B4D5DA000B5AE4 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				71A1B32B29B4D5E0000B5AE4 /* ServerProtocol.swift */,
+				151E706A2940D98C000F9ED0 /* Server.swift */,
+			);
+			path = Server;
 			sourceTree = "<group>";
 		};
 		71B97EE529B3675F005FCEAF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				151E705A2940D970000F9ED0 /* DealsViewController.swift */,
+				71471D3A29B372CF004AE0F7 /* DealCell */,
+				71471D3B29B372DA004AE0F7 /* HeaderCell */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		71DE205E29B49A9700DD9973 /* Typealias */ = {
+			isa = PBXGroup;
+			children = (
+				71DE205C29B49A0D00DD9973 /* Typealias.swift */,
+			);
+			path = Typealias;
+			sourceTree = "<group>";
+		};
+		71DE206129B49AA400DD9973 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				71DE206429B4A3D400DD9973 /* ButtonState.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,10 +252,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71DE206329B4A32300DD9973 /* HeaderCell.xib in Resources */,
 				151E70632940D971000F9ED0 /* LaunchScreen.storyboard in Resources */,
 				151E70602940D971000F9ED0 /* Assets.xcassets in Resources */,
 				151E705E2940D970000F9ED0 /* Main.storyboard in Resources */,
-				155E2E082942CF470094E5DA /* HeaderCell.xib in Resources */,
 				711F63EE29B3687E003949B4 /* DealCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,12 +306,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A1B32229B4C422000B5AE4 /* NetworkService.swift in Sources */,
 				151E706F2941FC75000F9ED0 /* DealCell.swift in Sources */,
+				71DE206529B4A3D400DD9973 /* ButtonState.swift in Sources */,
+				71A1B32429B4D3C9000B5AE4 /* AssemblyBuilder.swift in Sources */,
+				71A1B32E29B4D60E000B5AE4 /* NetworkServiceProtocol.swift in Sources */,
+				71A1B32729B4D475000B5AE4 /* AssemblyBuilderProtocol.swift in Sources */,
+				71A1B32929B4D4B0000B5AE4 /* DealCellProtocol.swift in Sources */,
 				151E705B2940D970000F9ED0 /* DealsViewController.swift in Sources */,
 				155E2E092942CF470094E5DA /* HeaderCell.swift in Sources */,
+				71A1B32C29B4D5E0000B5AE4 /* ServerProtocol.swift in Sources */,
 				151E70572940D970000F9ED0 /* AppDelegate.swift in Sources */,
 				151E706B2940D98C000F9ED0 /* Server.swift in Sources */,
 				151E70592940D970000F9ED0 /* SceneDelegate.swift in Sources */,
+				71DE205D29B49A0E00DD9973 /* Typealias.swift in Sources */,
+				71A1B31D29B4B77A000B5AE4 /* String+Extension.swift in Sources */,
+				71471D3629B36FFF004AE0F7 /* Deal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

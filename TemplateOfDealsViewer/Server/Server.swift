@@ -3,7 +3,8 @@
 
 import Foundation
 
-final class Server {
+/// Сервер
+final class Server: ServerProtocol {
     let queue = DispatchQueue(label: "DealsMakeQueue")
     let instrumentNames = [
         "EUR/USD_TOD",
@@ -40,7 +41,7 @@ final class Server {
                     instrumentName: self.instrumentNames.shuffled().first ?? "",
                     price: Double.random(in: 60 ... 70),
                     amount: Double.random(in: 1_000_000 ... 50_000_000),
-                    side: Deal.Side.allCases.randomElement() ?? .buy
+                    side: Side.allCases.randomElement() ?? .buy
                 )
                 deals.append(deal)
 
@@ -58,19 +59,5 @@ final class Server {
                 }
             }
         }
-    }
-}
-
-/// Deal
-struct Deal {
-    let id: Int64
-    let dateModifier: Date
-    let instrumentName: String
-    let price: Double
-    let amount: Double
-    let side: Side
-
-    enum Side: CaseIterable {
-        case sell, buy
     }
 }
