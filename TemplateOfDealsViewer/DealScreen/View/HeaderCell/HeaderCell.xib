@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderCell" rowHeight="150" id="MBL-eC-tGd" userLabel="HeaderCell" customClass="HeaderCell" customModule="TemplateOfDealsViewer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MBL-eC-tGd" id="AfB-Al-e9F">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0ns-HG-WvX">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eb3-Ln-WG2">
+                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="150"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button" backgroundImage="chevron.up.chevron.down" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="filled" image="chevron.up.chevron.down" catalog="system" imagePlacement="trailing" title="Instrument" imagePadding="10">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="7"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="instrumentButtonAction:" destination="MBL-eC-tGd" eventType="touchUpInside" id="vZK-Nv-HgL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0n-a0-9cF">
+                                <rect key="frame" x="97.666666666666686" y="0.0" width="97.333333333333314" height="150"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="chevron.up.chevron.down" catalog="system" imagePlacement="trailing" title="Price" imagePadding="10">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="9"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="priceButtonAction:" destination="MBL-eC-tGd" eventType="touchUpInside" id="99u-LH-mwU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klw-uv-r9d">
+                                <rect key="frame" x="195" y="0.0" width="97.666666666666686" height="150"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="chevron.up.chevron.down" catalog="system" imagePlacement="trailing" title="Amount" imagePadding="10">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="9"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="amountButtonAction:" destination="MBL-eC-tGd" eventType="touchUpInside" id="W2U-2m-CJH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8x4-Lx-TCF">
+                                <rect key="frame" x="292.66666666666669" y="0.0" width="97.333333333333314" height="150"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="chevron.up.chevron.down" catalog="system" imagePlacement="trailing" title="Side " imagePadding="10">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="9"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sideButtonAction:" destination="MBL-eC-tGd" eventType="touchUpInside" id="gNt-GF-fP5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0ns-HG-WvX" firstAttribute="top" secondItem="AfB-Al-e9F" secondAttribute="top" id="Kwa-FR-apy"/>
+                    <constraint firstItem="0ns-HG-WvX" firstAttribute="leading" secondItem="AfB-Al-e9F" secondAttribute="leading" id="Rrb-Vp-Fsc"/>
+                    <constraint firstAttribute="trailing" secondItem="0ns-HG-WvX" secondAttribute="trailing" id="SRZ-U8-jGS"/>
+                    <constraint firstAttribute="bottom" secondItem="0ns-HG-WvX" secondAttribute="bottom" id="hPu-ge-HAB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="amountButton" destination="klw-uv-r9d" id="Rt6-MC-sS0"/>
+                <outlet property="instrumentsButton" destination="eb3-Ln-WG2" id="Kjg-8Z-uEi"/>
+                <outlet property="priceButton" destination="i0n-a0-9cF" id="4Lw-Pv-2Cb"/>
+                <outlet property="sideButton" destination="8x4-Lx-TCF" id="V7d-NX-M55"/>
+            </connections>
+            <point key="canvasLocation" x="274.61538461538458" y="107.70142180094786"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.up.chevron.down" catalog="system" width="128" height="128"/>
+    </resources>
+</document>

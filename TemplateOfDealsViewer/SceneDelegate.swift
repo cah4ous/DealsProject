@@ -13,5 +13,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         options connectionOptions: UIScene.ConnectionOptions
     ) {
         guard let windowScene = scene as? UIWindowScene else { return }
+        let window = UIWindow(windowScene: windowScene)
+        let assemblyBuilder = AssemblyBuilder()
+        let dealViewController = assemblyBuilder.makeDealModule()
+        let navigationController = UINavigationController(rootViewController: dealViewController)
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
+        self.window = window
     }
 }
